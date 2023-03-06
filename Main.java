@@ -1,25 +1,39 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        //Your code goes here
-        //For user input
         Scanner sc = new Scanner(System.in);
-        //Heading
-        System.out.println("CBSE Board percentage Calculator");
-        //Taking input
-        System.out.println("Enter your marks of English:");
-        float a = sc.nextFloat();
-        System.out.println("Enter your marks of Maths:");
-        float b = sc.nextFloat();
-        System.out.println("Enter your marks of Science:");
-        float c = sc.nextFloat();
-        System.out.println("Enter your marks of Hindi:");
-        float d = sc.nextFloat();
-        System.out.println("Enter your marks of IT:");
-        float e = sc.nextFloat();
-        System.out.println("Your total percentage is:");
-        float ttl = a+b+c+d+e;
-        System.out.println((ttl/500)*100);
-        //end of code
+        //Question 1
+        // Sum of three numbers
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int sum = a+ b+ c;
+        System.out.println(sum);
+
+        //Question 2
+        //CGPA of three subjects
+        int d = sc.nextInt();
+        int e = sc.nextInt();
+        int f = sc.nextInt();
+        int CGPA = (d+ e+ f)/3;
+        System.out.println(CGPA);
+
+        //Question 3
+        //Greeting
+        System.out.println("Enter your name:");
+        String name = sc.nextLine();
+        System.out.println("Hello "+ name+ ", Have a good day");
+
+        //Question 4
+        // KM to Miles
+        System.out.println("Enter the number of KM");
+        float KM = sc.nextFloat();
+        double mile = KM/1.609;
+        System.out.println("The number of miles are: " + mile);
+
+        //Question 5
+        //integer or not
+        System.out.println("Enter your number");
+        System.out.println(sc.hasNextInt());
     }
 }
